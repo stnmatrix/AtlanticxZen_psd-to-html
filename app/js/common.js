@@ -6,14 +6,14 @@ $(function() {
 		$('.main-head .mnu-mobile').click(function(e) {
 			if ($(window).width() <= 992) {
 				$(this).toggleClass('opened');
-				$('.main-head .mnu').slideToggle('normal');
+				$('.main-head .mnu').slideToggle('fast');
 			}
 			e.stopPropagation();
 		});
 		
 		$('.mnu a').click(function(e) {
 			if ($(window).width() <= 992) {
-				$('.main-head .mnu').slideUp('normal');				
+				$('.main-head .mnu').slideUp('fast');				
 			}
 		});
 

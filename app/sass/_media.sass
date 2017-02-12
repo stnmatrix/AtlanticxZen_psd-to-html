@@ -10,6 +10,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
+	.btns
+		&:hover
+			transform: none
+			box-shadow: none 
 	.main-head
 		position: relative
 		background-position: center 
@@ -83,7 +87,11 @@
 			input[type="text"]
 				width: 290px
 	.footer
-		padding: 25px 0 
+		padding:
+			top: 10px
+			bottom: 10px		
+		&-mnu-mobile-wrap
+			 padding-top: 7px;
 		&-mnu
 			display: none
 			text-align: center
@@ -117,7 +125,7 @@
 	.main-head
 		padding: 33px 10px 233px 10px
 		.mnu
-			right: 12px
+			right: 10px
 			width: 95%
 			&-items
 				li
@@ -166,6 +174,7 @@
 				border-bottom-left-radius: 3px
 				border-left: 1px solid #FFF
 				margin: 2px 0 0
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
